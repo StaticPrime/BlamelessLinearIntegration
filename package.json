@@ -1,0 +1,53 @@
+{
+  "name": "blamelesslinearintegration",
+  "engines": {
+    "node": "19.1.0",
+    "npm": "8.19.3"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StaticPrime/BlamelessLinearIntegration.git"
+  },
+  "author": "Jason Breault",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StaticPrime/BlamelessLinearIntegration/issues"
+  },
+  "homepage": "https://github.com/StaticPrime/BlamelessLinearIntegration#readme",
+  "scripts": {
+    "build": "tsc",
+    "start": "NODE_PATH=build node build/server.js",
+    "lint": "eslint . --ext .ts"
+  },
+  "dependencies": {
+    "@koa/router": "^12.0.0",
+    "@linear/sdk": "^2.0.0",
+    "axios": "^1.2.5",
+    "dotenv": "^16.0.3",
+    "joi": "^17.7.0",
+    "kcors": "^2.2.2",
+    "koa": "^2.14.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router-joi-validation": "^1.2.2",
+    "lodash": "^4.17.21",
+    "nvm": "^0.0.4",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@types/kcors": "^2.2.6",
+    "@types/koa": "^2.13.5",
+    "@types/koa__router": "^12.0.0",
+    "@types/koa-bodyparser": "^4.3.10",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^8.32.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0"
+  }
+}
